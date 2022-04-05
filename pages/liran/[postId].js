@@ -13,7 +13,7 @@ function HomePage(props) {
 }
 
 export async function getStaticPaths() {
-  console.log("get static paths");
+  console.log("get static props");
   return {
     paths: [
       { params: { postId: "1" } },
@@ -28,6 +28,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   console.log("get static paths", context.params.id);
   return {
+    revalidate: 10,
     props: {
       text: new Date().toString(),
       id: context.params.postId,
