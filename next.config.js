@@ -1,5 +1,4 @@
-const { i18n } = require("./next-i18next.config");
-
+const i18n = ["en", "de"];
 module.exports = {
   i18n,
   webpack5: false,
