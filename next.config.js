@@ -1,5 +1,6 @@
-const i18n = ["en", "de"];
 module.exports = {
-  i18n,
-  webpack5: false,
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "de"],
+  },
 };
