@@ -6,13 +6,23 @@ function HomePage(props) {
   const [counter, setCounter] = React.useState(1);
   const { t } = useTranslation();
   return (
-    <div>
-      <p>Translation: {t("hello")}</p>
-      <p>Counter: {counter}</p>
-      <p>Date: {props.text}</p>
-      <p>Id: {props.id}</p>
-      <button onClick={() => console.log("gfffff")}>counter: {counter}</button>
-    </div>
+    <>
+      <img src="https://cdn.bookaway.com/media/files/5d6e4a2ceb7cbd68d11cd1d5.webp?width=1200&height=400&quality=100"></img>
+      <div>
+        <p>Translation: {t("hello")}</p>
+        <p>Counter: {counter}</p>
+        <p>Date: {props.text}</p>
+        <p>Id: {props.id}</p>
+        <button onClick={() => console.log("gfffff")}>
+          counter: {counter}
+        </button>
+      </div>
+      <style jsx>{`
+        img {
+          width: 100%;
+        }
+      `}</style>
+    </>
   );
 }
 
