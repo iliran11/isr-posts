@@ -7,7 +7,7 @@ function HomePage(props) {
   const { t } = useTranslation();
   return (
     <>
-      <img src="https://cdn.bookaway.com/media/files/5d6e4a2ceb7cbd68d11cd1d5.webp?width=1200&height=400&quality=100"></img>
+      <img src="https://cdn.bookaway.com/media/files/5d6e4a2ceb7cbd68d11cd1d5.webp?width=400&height=430&quality=20"></img>
       <div>
         <p>Translation: {t("hello")}</p>
         <p>Counter: {counter}</p>
